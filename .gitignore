@@ -1,10 +1,16 @@
+# ====== Build & Dependencies ======
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
+build/
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# ====== Maven / Gradle / Wrapper ======
+.mvn/wrapper/maven-wrapper.jar
+
+# ====== Spring Tools Suite ======
 .apt_generated
 .classpath
 .factorypath
@@ -13,23 +19,41 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# ====== IntelliJ IDEA ======
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# ====== NetBeans ======
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# ====== VS Code ======
 .vscode/
 
-D:\Email_Reply_AI_service\Email_Reply_AI_service\minikube-linux-amd64
+# ====== OS & Misc ======
+.DS_Store
+Thumbs.db
+
+# ====== Docker & Kubernetes ======
+*.log
+*.pid
+*.tar
+*.gz
+*.zip
+*.img
+*.iso
+
+# ====== Large binaries (VERY IMPORTANT) ======
+minikube-linux-amd64
+*.exe
+*.bin
+*.dmg
+*.mp4
+*.mp3
+*.7z
+*.rar
