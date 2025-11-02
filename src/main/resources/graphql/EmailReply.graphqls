@@ -1,0 +1,23 @@
+enum Tone
+{
+    FORMAL
+    CASUAL
+    FRIENDLY
+    CONCISE
+    PROFESSIONAL
+}
+
+type EmailReply
+{
+    emailContent: String
+    tone : Tone
+    reply: String
+}
+type Query {
+    _dummy: String
+}
+
+type Mutation
+{
+    getAIReply(emailContent:String!,tone:Tone!) : EmailReply
+}

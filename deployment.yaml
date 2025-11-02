@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-reply-ai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: email-reply-ai
+  template:
+    metadata:
+      labels:
+        app: email-reply-ai
+    spec:
+      containers:
+        - name: email-reply-ai
+          image: arpit196/email-reply-ai-service:latest
+          ports:
+            - containerPort: 8080
